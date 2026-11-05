@@ -57,6 +57,13 @@ namespace Eszkozok
         // metodusok
 
         // 1
-        // ToString()
+        public override string ToString() { return $"{Azonosito} {Nev} {Kategoria} - napi díj: {NapiDij} ft | készlet: {Keszlet} db"; }
+
+        // 2
+        public int TeljesNapiBevetel() { return NapiDij * Keszlet; }
+
+        // 3
+        // ???
+        public bool KategoriaEgyezik(string keresettKategoria) { if (keresettKategoria == Kategoria) { return true; } else { return false; } }
     }
 }
